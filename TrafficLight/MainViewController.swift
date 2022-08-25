@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    //MARK: - IB Outlets
+ 
     @IBOutlet weak var redLightView: UIView!
     @IBOutlet weak var yellowLightView: UIView!
     @IBOutlet weak var greenLigtView: UIView!
@@ -43,7 +43,6 @@ class MainViewController: UIViewController {
     @IBAction func buttonTapped() {
         startButton.setTitle("Next", for: .normal)
         
-        
         switch currentLight {
         case .red:
             yellowLightView.alpha = lightIsOn
@@ -58,15 +57,5 @@ class MainViewController: UIViewController {
             greenLigtView.alpha = lightIsOff
             currentLight = .red
         }
-        
-        
-        
     }
-    
-    
-   
-
-
-    
-
 }
