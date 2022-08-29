@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     private let lightIsOff: CGFloat = 0.3
     
     private enum CurrentLight {
-        case red, yellow, green
+        case red, yellow, green, off
     }
     
     override func viewDidLoad() {
@@ -51,11 +51,16 @@ class MainViewController: UIViewController {
         case .yellow:
             greenLigtView.alpha = lightIsOn
             yellowLightView.alpha = lightIsOff
+            currentLight = .off
+        case .off:
+            greenLigtView.alpha = lightIsOff
+            startButton.setTitle("Again?", for: .normal)
             currentLight = .green
         case .green:
             redLightView.alpha = lightIsOn
             greenLigtView.alpha = lightIsOff
             currentLight = .red
+        
         }
     }
 }

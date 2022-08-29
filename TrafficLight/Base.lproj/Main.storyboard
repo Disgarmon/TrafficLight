@@ -41,8 +41,8 @@
                                     <constraint firstItem="t1F-Tq-sMk" firstAttribute="width" secondItem="v3p-EG-Z7r" secondAttribute="width" multiplier="0.991935" id="s9k-HE-fsR"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ja-FV-3Er">
-                                <rect key="frame" x="179" y="781" width="56" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ja-FV-3Er">
+                                <rect key="frame" x="179" y="791" width="56" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYb-jh-V9W">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="31"/>
@@ -58,7 +58,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6ja-FV-3Er" secondAttribute="bottom" constant="40" id="1Wf-T2-XLD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qdg-OC-cmO" secondAttribute="trailing" constant="16" id="PNn-eR-z51"/>
+                            <constraint firstItem="sYb-jh-V9W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rzp-TS-CVb"/>
                             <constraint firstItem="Qdg-OC-cmO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="irB-Fp-WFN"/>
                             <constraint firstItem="Qdg-OC-cmO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="pfv-o3-SAl"/>
                         </constraints>
